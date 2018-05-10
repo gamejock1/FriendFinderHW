@@ -1,0 +1,20 @@
+{
+  "name": "friendfinderhw",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gamejock1/FriendFinderHW.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gamejock1/FriendFinderHW/issues"
+  },
+  "homepage": "https://github.com/gamejock1/FriendFinderHW#readme"
+}
