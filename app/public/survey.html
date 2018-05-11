@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <title>Friend Finder!</title>
+</head>
+
+<body style="margin:0 10%">
+  <h1 style="border-bottom: 1px solid rgb(230, 230, 230); padding: 15px;">Survey Questions</h1>
+  <div style="border-bottom: 1px solid rgb(230, 230, 230); background: rgb(236, 236, 253); padding: 2%;">
+    <h2 style="padding: 15px;">About You</h2>
+    <h3>Name (Required)</h3>
+    <input style="width:100%; height:35px; box-shadow: inset 1px 1px rgb(212, 212, 212)" id="nameInput" type="text" class="form-control"
+      placeholder="Name">
+    <h3>Link to Image (Required)</h3>
+    <input style="width:100%; height:35px; box-shadow: inset 1px 1px rgb(212, 212, 212); margin: 0 0 20px 0;" id="imageInput"
+      type="text" class="form-control" placeholder="Image URL">
+  </div>
+  <div>
+    <h3>Question 1</h3>
+    <h4>You Must have coffee to do your coding homework.</h4>
+    <h6>(Strongly Disagree)</h6>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="answerOptions1" id="A1" value="1">
+      <label class="form-check-label" for="A1">1</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="answerOptions1" id="A2" value="2">
+      <label class="form-check-label" for="A2">2</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="answerOptions1" id="A3" value="3">
+      <label class="form-check-label" for="A3">3</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="answerOptions1" id="A4" value="4">
+      <label class="form-check-label" for="A4">4</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="answerOptions1" id="A5" value="5">
+      <label class="form-check-label" for="A5">5</label>
+    </div>
+    <h6>(Strongly Agree)</h6>
+  </div>
+
+
+  <div>
+    <h3>Question 2</h3>
+    <h4>You have found the TA's in class to be very helpfull.</h4>
+    <h6>(Strongly Agree)</h6>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="answerOptions2" id="B1" value="5">
+      <label class="form-check-label" for="B1">5</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="answerOptions2" id="B2" value="5">
+      <label class="form-check-label" for="B2">5</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="answerOptions2" id="B3" value="5">
+      <label class="form-check-label" for="B3">5</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="answerOptions2" id="B4" value="5">
+      <label class="form-check-label" for="B4">5</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="answerOptions2" id="B5" value="5">
+      <label class="form-check-label" for="B5">5</label>
+    </div>
+    <h6>(Strongly Agree)</h6>
+  </div>
+
+
+  <div>
+    <h3>Question 3</h3>
+    <h4>You feel like you have a good grasp on everything we have learned in class.</h4>
+    <h6>(Strongly Disagree)</h6>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="answerOptions3" id="C1" value="1">
+      <label class="form-check-label" for="C1">1</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="answerOptions3" id="C2" value="2">
+      <label class="form-check-label" for="C2">2</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="answerOptions3" id="C3" value="3">
+      <label class="form-check-label" for="C3">3</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="answerOptions3" id="C4" value="4">
+      <label class="form-check-label" for="C4">4</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="answerOptions3" id="C5" value="5">
+      <label class="form-check-label" for="C5">5</label>
+    </div>
+    <h6>(Strongly Agree)</h6>
+  </div>
+
+
+  <div>
+    <h3>Question 4</h3>
+    <h4>You never procrastinate in doing your homework.</h4>
+    <h6>(Strongly Disagree)</h6>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="answerOptions4" id="D1" value="1">
+      <label class="form-check-label" for="D1">1</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="answerOptions4" id="D2" value="2">
+      <label class="form-check-label" for="D2">2</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="answerOptions4" id="D3" value="3">
+      <label class="form-check-label" for="D3">3</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="answerOptions4" id="D4" value="4">
+      <label class="form-check-label" for="D4">4</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="answerOptions4" id="D5" value="5">
+      <label class="form-check-label" for="D5">5</label>
+    </div>
+    <h6>(Strongly Agree)</h6>
+  </div>
+</body>
+
+
+<div>
+  <h3>Question 5</h3>
+  <h4>Gyro Bros. is your favorite place to eat on Tech Square.</h4>
+  <h6>(Strongly Disagree)</h6>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="answerOptions5" id="E1" value="1">
+    <label class="form-check-label" for="E1">1</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="answerOptions5" id="E2" value="2">
+    <label class="form-check-label" for="E2">2</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="answerOptions5" id="E3" value="3">
+    <label class="form-check-label" for="E3">3</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="answerOptions5" id="E4" value="4">
+    <label class="form-check-label" for="E4">4</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="answerOptions5" id="E5" value="5">
+    <label class="form-check-label" for="E5">5</label>
+  </div>
+  <h6>(Strongly Agree)</h6>
+</div>
+
+
+<div>
+  <h3>Question 6</h3>
+  <h4>Starbucks is your favorite coffee.</h4>
+  <h6>(Strongly Disagree)</h6>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="answerOptions6" id="F1" value="1">
+    <label class="form-check-label" for="F1">1</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="answerOptions6" id="F2" value="2">
+    <label class="form-check-label" for="F2">2</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="answerOptions6" id="F3" value="3">
+    <label class="form-check-label" for="F3">3</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="answerOptions6" id="F4" value="4">
+    <label class="form-check-label" for="F4">4</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="answerOptions6" id="F5" value="5">
+    <label class="form-check-label" for="F5">5</label>
+  </div>
+  <h6>(Strongly Agree)</h6>
+</div>
+
+
+<div>
+  <h3>Question 7</h3>
+  <h4>Mac is way better than Windows.</h4>
+  <h6>(Strongly Disagree)</h6>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="answerOptions7" id="G1" value="1">
+    <label class="form-check-label" for="G1">1</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="answerOptions7" id="G2" value="2">
+    <label class="form-check-label" for="G2">2</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="answerOptions7" id="G3" value="3">
+    <label class="form-check-label" for="G3">3</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="answerOptions7" id="G4" value="4">
+    <label class="form-check-label" for="G4">4</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="answerOptions7" id="G5" value="5">
+    <label class="form-check-label" for="G5">5</label>
+  </div>
+  <h6>(Strongly Agree)</h6>
+</div>
+
+
+<div>
+  <h3>Question 8</h3>
+  <h4>Xbox is better than Play Station.</h4>
+  <h6>(Strongly Disagree)</h6>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="answerOptions8" id="H1" value="1">
+    <label class="form-check-label" for="H1">1</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="answerOptions8" id="H2" value="2">
+    <label class="form-check-label" for="H2">2</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="answerOptions8" id="H3" value="3">
+    <label class="form-check-label" for="H3">3</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="answerOptions8" id="H4" value="4">
+    <label class="form-check-label" for="H4">4</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="answerOptions8" id="H5" value="5">
+    <label class="form-check-label" for="H5">5</label>
+  </div>
+  <h6>(Strongly Agree)</h6>
+</div>
+
+
+<div>
+  <h3>Question 9</h3>
+  <h4>Lord Of The Rings is one of your favorite movie series.</h4>
+  <h6>(Strongly Disagree)</h6>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="answerOptions9" id="I1" value="1">
+    <label class="form-check-label" for="I1">1</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="answerOptions9" id="I2" value="2">
+    <label class="form-check-label" for="I2">2</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="answerOptions9" id="I3" value="3">
+    <label class="form-check-label" for="I3">3</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="answerOptions9" id="I4" value="4">
+    <label class="form-check-label" for="I4">4</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="answerOptions9" id="I5" value="5">
+    <label class="form-check-label" for="I5">5</label>
+  </div>
+  <h6>(Strongly Agree)</h6>
+</div>
+
+
+<div>
+  <h3>Question 10</h3>
+  <h4>Batman is best.</h4>
+  <h6>(Strongly Disagree)</h6>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="answerOptions10" id="J1" value="1">
+    <label class="form-check-label" for="I1">1</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="answerOptions10" id="J2" value="2">
+    <label class="form-check-label" for="I2">2</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="answerOptions10" id="J3" value="3">
+    <label class="form-check-label" for="I3">3</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="answerOptions10" id="J4" value="4">
+    <label class="form-check-label" for="I4">4</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="answerOptions10" id="J5" value="5">
+    <label class="form-check-label" for="I5">5</label>
+  </div>
+  <h6>(Strongly Agree)</h6>
+</div>
+
+<button style="margin: 5% 0;" class="btn-lg btn-primary" id="submit">Submit Answers</button>
+
+
+
+
+<script>
+  $(document).ready(function () {
+
+    var name = document.getElementById('nameInput');
+    var image = document.getElementById('imageInput');
+
+    function getAnswers() {
+      var questions = document.getElementsByClassName('form-check-input');
+      var answerArray = [];
+      for (let i = 0; i < questions.length; i++) {
+        if (questions[i].checked) {
+          answerArray.push(questions[i].value);
+        };
+        // console.log(answerArray);
+      };
+      return answerArray;
+    };
+
+    function validate(arr){
+      if (arr.length < 10) {
+        alert('All questions must be answered');
+        return false;
+      }
+      else if (name.value === '' || image.value === '') {
+        alert('Name and Image are required');
+        return false;
+      }
+      return true;
+    };
+
+    function createObject(name, image, arr) {
+      this.name = name;
+      this.image = image;
+      this.arr = arr;
+    };
+
+    
+
+    $("#submit").on("click", function (event) {
+      event.preventDefault();
+      var answerArray = getAnswers();
+      // console.log(answerArray);
+      if (validate(answerArray)){
+        var newFriend = new createObject(name.value, image.value, answerArray);
+
+        $.post("/api/friends", newFriend,
+        function(data) {
+          if(data){
+            alert('data posted to api');
+          }
+        });
+        $.get("/api/friends", function(data){
+          console.log(data);
+        })
+      }
+
+    });
+
+  });
+
+
+
+</script>
+
+
+</html>
