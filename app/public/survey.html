@@ -318,6 +318,7 @@
       for (let i = 0; i < questions.length; i++) {
         if (questions[i].checked) {
           answerArray.push(questions[i].value);
+          questions[i].checked = false;
         };
         // console.log(answerArray);
       };
@@ -336,10 +337,10 @@
       return true;
     };
 
-    function createObject(name, image, arr) {
+    function createObject(name, image, scores) {
       this.name = name;
       this.image = image;
-      this.arr = arr;
+      this.scores = scores;
     };
 
     
@@ -350,33 +351,35 @@
       // console.log(answerArray);
       if (validate(answerArray)){
         var newFriend = new createObject(name.value, image.value, answerArray);
+        
+        
+        $.get("/api/friends", function(friendsArray){
+          console.log(friendsArray);
+          
+          var answers = [];
+          for (let i = 0; i < friendsArray.length; i++) { // handling person
+            let sumObj = {name: friendsArray[i].name};
+            let scoreSum = 0
+            console.log(friendsArray[i])
+            for (let f = 0; f < friendsArray[i].scores.length; f++) { //handling person's scores
+              scoreSum += parseInt(friendsArray[i].scores[f]);
+            }
+            sumObj.sum = scoreSum;
+            answers.push(sumObj)
+          }
+          console.log('after loop is done', answers);
+        })
 
-        $.post("/api/friends", newFriend,
+      }
+      $.post("/api/friends", newFriend,
         function(data) {
           if(data){
             alert('data posted to api');
           }
         });
-        $.get("/api/friends", function(data){
-          console.log(data);
-
-// trying to add answers arrays together to compare the totals???
-          
-          // var answers = [];
-          // for (let i = 0; i < data.length; i++) {
-          //   for (let i = 0; i < data[i].scores.length; i++) {
-          //     var sums = 0;
-          //     sums += parseInt(scores[i]);
-          //     answers.push(sums);
-              
-          //   }
-          // }
-          // console.log(answers);
-        })
-      }
-
     });
 
+     
   });
 
 
